@@ -1,4 +1,4 @@
-package main
+package src
 
 import (
 	"context"
@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	topic   = "message-log"
+	topic   = "my-kafka-topic"
 	broker1 = "localhost:9093"
 	broker2 = "localhost:9094"
 	broker3 = "localhost:9095"
@@ -36,4 +36,3 @@ func Producer(ctx context.Context) {
 		time.Sleep(time.Second)
 	}
 }
-
